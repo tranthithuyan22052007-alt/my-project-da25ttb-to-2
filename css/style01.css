@@ -1,4 +1,57 @@
-img{
-    width: 130px;
-    height: 130px;
+*{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:3;
+}
+
+.container{
+	margin:50px 50px;
+	background:pink;
+}
+
+#title{
+	font-size:40px;
+	text-transform:uppercase;
+	color:purple;
+	text-align:center;
+	
+}
+
+label{
+	display:block;
+	color:purple;
+	margin:2px;
+	font-weight:bolder;
+	border-radius:10px;
+}
+
+.button{
+	background-color:purple;
+	width:150px;
+	margin:5px;
+	padding:3px;
+	color:pink;
+	border-radius:5px;
+	
+}
+.button:hover{
+	background-color:#aaaaff;
+	color:#8debff;
+}
+
+input{
+		border-radius:5px;
+		background-color:white;
+}
+ form#frmLogin{
+	 padding:20px 50px;
+	 max-width:500px;
+	 width:100%;
+	 margin:auto;
+ }
+
+table{
+	background-color: pink;
 }

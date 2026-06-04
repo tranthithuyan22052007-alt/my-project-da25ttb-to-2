@@ -1,50 +1,21 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Đăng Ký</title>
-    <link rel="stylesheet" href="../css/style03.css">
-</head>
-<body>
+<html lang = "vi">
+        <head>
+                <title> hiển thị câu chào với hộp thoại alert </title>
+                <meta charset = "utf-8">
+				<link href = "../css/style03.css/" rel ="stylesheet">
+        </head>
+        <body>
+             <div class ="container">
+			 
+				<p id = "name">
+					Thúy An
+				</p>
+			 </div>		
+				<script>	
+				let name = document.getElementById("name").innerHTML;
 
-    <div class="container">
-        <form class="form-box">
-            <h2>Đăng Ký</h2>
-
-            <div class="form-group">
-                <label>Họ Và Tên</label>
-               <input type="text" id="txtHoVaTen" name="txtHoVaTen">
-            </div>
-			
-			<div class="form-group">
-                <label>Ngày/Tháng/Năm sinh</label>
-                <input type="Ngày/Tháng/Năm" id="txtNgayThangNam" name="txtNgayThangNam">
-            </div>
-
-             <div class="form-group">
-                <label>Email</label>
-                <input type="email" id="txtEmail" name="txtEmail">
-            </div>
-            
-          
-			
-            <div class="form-group">
-                <label>Tạo Mật Khẩu</label>
-                <input type="password" id="txtTaoMatKhau" name="txtTaoMatKhau">
-            </div>
-
-            <div class="form-group">
-                <label>Nhập Lại Mật Khẩu</label>
-                <input type="password" id="txtNhapLaiMatKhau" name="txtNhapLaiMatKhau">
-            </div>
-
-            <div class="btn-group">
-                <button type="submit">Đăng ký</button>
-                <button type="reset">Làm lại</button>
-            </div>
-        </form>
-    </div>
-
-</body>
+				window.alert("Xin chào" + name + "! Chúc bạn buổi chiều vui vẻ!");
+             </script>
+        </body>
 </html>
