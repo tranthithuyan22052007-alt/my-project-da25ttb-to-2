@@ -1,4 +1,79 @@
 /*javacript*/
+//Khai báo một đối tượng
+const product = {
+    id:"1",
+    name:" Trà Sữa Trân Châu Đường Đen",
+    price:25000,
+    description:"Trà sữa trân châu đường đen là thức uống kết hợp hoàn hảo giữa nền trà sữa béo ngậy...",
+    image:"../assets/images/tranchauduongden.jpg",
+    link:"chi-tiet.html"
+};
+
+const products = [
+    { 
+        id:"1",
+    name:" Trà Sữa Trân Châu Đường Đen",
+    price:25000,
+    description:"Trà sữa trân châu đường đen là thức uống kết hợp hoàn hảo giữa nền trà sữa béo ngậy...",
+    image:"../assets/images/tranchauduongden.jpg",
+    link:"chi-tiet.html"
+    },
+    { 
+        id:"2",
+    name:"Matcha latte",
+    price:27000,
+    description:"Matcha Latte là thức uống kết hợp giữa bột matcha Nhật Bản và sữa tươi...",
+    image:"../assets/images/matchalatte.jpg",
+    link:"chi-tiet.html"
+    },
+    {
+       id:"3",
+    name:"Trà Đào Cam Sả",
+    price:22000,
+    description:"Trà đào cam sả là một thức uống giải khát vô cùng được ưa chuộng nhờ sự kết hợp hài hòa giữa vị ngọt thanh của đào, vị chua dịu của cam...",
+    image:"../assets/images/tradaocamsa.jpg",
+    link:"chi-tiet.html" 
+    },
+    {
+        id:"4",
+    name:"Sinh Tố Bơ",
+    price:30000,
+    description:"Sinh tố bơ là thức uống giải khát bổ dưỡng, nổi bật với hương vị béo ngậy, thơm mát...",
+    image:"../assets/images/sinhtobo.jpg",
+    link:"chi-tiet.html"
+    }
+
+
+];
+
+function addItemV2(product){
+    document.getElementById("product-list").innerHTML += `
+        <div class="col">
+            <div class="card product-item h-100">
+                <div class="product-image">
+                    <img class="card-img-top" src="${product.image}" alt="${product.name}">
+                </div>
+                <div class="card-body bg-light product-info">
+                    <h4 class="card-title">${product.name}</h4>
+                    <h5 class="card-text">${product.price} VNĐ</h5>
+                    <p class="card-text">${product.description}</p>
+                    <a class="btn btn-info" href="${product.link}">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function loadAllProduct(){
+    let i = 0;
+    while(i < products.length)
+    {
+        addItemV2(products[i]);
+        i++;
+    }
+}
+
+
 function inBCC(n)
 {
     let result = "";
